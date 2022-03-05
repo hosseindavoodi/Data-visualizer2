@@ -10,9 +10,7 @@ import Lineups from "./components/Lineups"
 function App() {
   const [data,setData]=useState([]);
   const [name,setName]=useState([]);
-
   const getData=()=>{
-
     fetch('json.json'
     ,{
 
@@ -21,7 +19,6 @@ function App() {
         'Accept': 'application/json'
        }
     }
-
     )
       .then(function(response){
         return response.json();
@@ -37,9 +34,7 @@ function App() {
     getData()
   },[])
     
-  
-
-  return (
+    return (
     <>
     <div id="wg-api-football-fixture"  className="maindiv">
   <table id="fixture" className="toptable">
@@ -53,7 +48,6 @@ function App() {
 
       {
 
-//data.map((item, i)=><p key={i}>{item.date}</p>)
 name.date
 }
       </td>
@@ -105,15 +99,10 @@ name.date
       <TabPanel key={1}><Events name = {name} data = {data} /></TabPanel>
       <TabPanel key={2}><Statistics  name = {name} data = {data} /></TabPanel>
       <TabPanel key={3}><Lineups  name = {name} data = {data} /></TabPanel>
-
-
- 
   </TabsComponent>
 
-
-
   </div>
-      
+    
     </>
   );
 }

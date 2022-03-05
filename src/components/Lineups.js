@@ -480,14 +480,9 @@ const f4132 = [
 ]
 
 
-
-
-
 const HomeFF = name.lineups[0].formation;
 const AwayFF = name.lineups[1].formation;
 let HFF;
-
-
 
 HomeFF === "4-2-3-1" ? HFF = f4231
 :
@@ -570,14 +565,12 @@ let Aplayerscircle = [];
 
 
   for (var i = 0; i < 11; i++) {
-    
-    
+      
     const aaa = {
       top: HFF[i].top + 3 + "%", left: HFF[i].left + "%"
     }
               
     Hplayerscircle.push(
-    
     <div>
      <span key={i} className="Lscor_football_absolute Lscor_football_text_center" style={aaa}>
             <span className="Lscor_football_grid_player wrapper wrapper1">
@@ -640,21 +633,12 @@ Awayplayers.push(
       <td id="lineups_grid" className="Lscor_football_grid height" colSpan="2">
         <span id="Hplayerscircle">
         {Hplayerscircle}
-
         </span>
-
-
-
         <span id="Aplayerscircle">
-          
         {Aplayerscircle}
         </span>
       </td>
     </tr>
-
-
-
-
 
     <tr>
       <td className="Lscor_football_text_center Lscor_football_header" colSpan="2">Coaches</td>
@@ -675,10 +659,8 @@ Awayplayers.push(
     </tr>
     <tr>
       <td id="starxleft">
-
       {Homeplayers}
-       
-       
+           
 
       </td>
       <td id="starxright">

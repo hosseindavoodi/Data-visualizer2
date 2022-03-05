@@ -7,9 +7,7 @@ export default function Statistics({name, data}) {
 
         const homestatistics = name.statistics[0].statistics[i].value;
         const awaystatistics = name.statistics[1].statistics[i].value;
-               
-                
-                
+                   
     aaa.push(<>
     <tr>  
      <td className="Lscor_football_width_33_p Lscor_football_no_border Lscor_football_font_size_10">{homestatistics}</td>
@@ -60,11 +58,6 @@ export default function Statistics({name, data}) {
        <tbody>
            {aaa}
        
-        
-      
-      
-     
-      
       </tbody>
     </table>
         
